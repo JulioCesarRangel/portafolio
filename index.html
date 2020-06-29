@@ -193,6 +193,53 @@
          autoplay : true
         });
       </script>
-      <script type="text/javascript" src="index.js"></script>
+      <script type="text/javascript">
+        function init() {
+          autoplay();
+          autoplay2();
+        }
+        function autoplay() {
+          $('.carousel.carousel-slider.carousel-skills').carousel('next');
+          setTimeout(autoplay, 6000);
+        }
+        function autoplay2() {
+          $('.carousel.carousel-slider.large-carousel').carousel('next');
+          setTimeout(autoplay2, 20000);
+        }
+
+        function abajo() {
+          let tamaño = null;
+          if (document.getElementById('body').clientWidth >= 1000) {
+            tamaño = window.screen.height + 10;
+          } else {
+            tamaño = window.screen.height - 65 ;
+          }
+          let scrolltop = window.pageYOffset;
+          let currentpage = tamaño + scrolltop;
+          window.scrollTo(0,currentpage)
+        }
+        function arriba() {
+          if (document.getElementById('body').clientWidth >= 1000) {
+            tamaño = window.screen.height - 75 ;
+          } else {
+            tamaño = window.screen.height - 55   ;
+          }
+          let scrolltop = window.pageYOffset;
+          let currentpage = scrolltop - tamaño;
+          window.scrollTo(0,currentpage)
+        }
+        var issett = true;
+
+        function tap() {
+
+          if (issett) {
+            $('.contenedor-items').addClass('hide')
+          } else {
+            $('.contenedor-items').removeClass('hide')
+          }
+          issett = !issett;
+        }
+
+      </script>
   </body>
 </html>
