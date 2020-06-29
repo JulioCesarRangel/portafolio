@@ -1,0 +1,60 @@
+#cruDmodal:not(:target), #LD:not(:target) , #Wapp:not(:target) {
+  opacity: 0;
+  top: -100% !important;
+}
+
+.modals {
+  background: rgba(0, 0, 0, 0.9) !important;
+  position: fixed;
+  width: 100vw !important;
+  height: 100vh !important;
+  top: 0;
+  left: 0 !important;
+  opacity: 1;
+  transition:all .2s linear;
+  z-index: 10000 !important;
+}
+
+.modal_content::-webkit-scrollbar{
+  display: none;
+}
+
+.modal_content {
+  background: #fff;
+  width: 60%;
+  max-width: 640px;
+  height: 60%;
+  border-radius: 6px;
+  margin:5% auto;
+  box-shadow: 2px 2px 5px 1px rgba(29, 30, 34, 0.5);
+  overflow:auto;
+}
+
+.modal-body {
+  margin-top: 70px;
+  padding: 2% 5% !important;
+}
+
+.modal_header {
+  text-align: center;
+  background: #fff;
+  width: inherit;
+  max-width: inherit;
+  padding: 10px;
+  position: fixed;
+  margin-bottom: 5px;
+  border-radius: 6px 6px 0 0;
+  color: grey;
+  border-bottom: 1px solid #ccc;
+  max-height: 100px;
+}
+
+.modal_btn-close {
+  color: #000;
+  position: absolute;
+  line-height: 2rem;
+  width: 2rem;
+  text-align: center;
+  top: .5rem;
+  right: .5rem;
+}

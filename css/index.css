@@ -1,0 +1,269 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #292929 !important;
+  border-radius: 50px;
+}
+
+body::-webkit-scrollbar{
+  background: grey !important;
+  width: 7px;
+}
+
+.mains {
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+  margin: 0 !important;
+  padding: 10% 4%;
+  min-height: 100vh;
+}
+.main {
+  min-height: 110vh;
+  background-image: url('../media/fondo1.jpg') !important;
+}
+
+.main2 {
+  overflow: hidden;
+  padding: 0 !important;
+  background-image: url('../media/fondo2.jpg') !important;
+}
+
+.main2 > div {
+  padding: 5% 5% !important;
+  min-height: 100vh !important;
+  min-width: 100vw !important;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+
+.main2 > div > div {
+  padding: 0 !important;
+}
+
+
+.main3 > div {
+  padding: 7% 4%;
+  padding-bottom: 0 !important;
+  background: rgba(0, 0, 0, 0.7) !important;
+  min-height: inherit;
+}
+
+.main3 {
+  padding: 0 !important;
+  background-image: url('../media/fondo3.jpg') !important;
+}
+
+nav {
+  background: transparent;
+  display: flex;
+  position: fixed;
+  top:0 !important
+}
+
+nav > ul {
+  float: right;
+  display: flex;
+  color : #545454;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin: auto;
+}
+
+nav > ul  li {
+  min-width: 10vw !important;
+  margin: auto;
+}
+
+nav > ul  li a {
+  margin: auto;
+  text-align: center;
+}
+
+.main > img {
+  margin-left: 10% !important;
+  max-width: 400px !important;
+}
+
+.main > h1 {
+  margin-top: 13% !important;
+  font-weight: bold;
+  color:rgba(2558, 255, 255, 0.9);
+}
+
+
+footer::-webkit-scrollbar {
+  display: none
+}
+footer > p {
+  margin: auto;
+}
+
+footer {
+  display: flex;
+  background: rgba(0,0,0,0.5);
+  margin-top: 3% !important;
+  padding: 1%;
+  color:white;
+}
+
+.carousel-slider {
+  z-index: 1 !important;
+}
+
+.imgslider {
+  max-width: 20vw;
+  margin: auto !important;
+}
+
+.carousel-skills {
+  margin-top: 15%;
+  min-height: 60vh !important;
+}
+
+.corousel-skills > .carousel-item {
+  background: transparent;
+}
+
+.carousel-item > div {
+  background: transparent !important;
+  display:flex
+}
+
+.carousel-skills .carousel-item > h2 {
+  text-align:  right
+}
+
+.texts {
+  margin-top: 15% !important;
+}
+
+
+.main3 > div > h4 {
+  color: white;
+  font-weight: bold;
+}
+
+.large-carousel > .carousel-item {
+  background: rgba(255,255,255,0.1) !important;
+  padding: 5%;
+}
+
+.btn-scroll > button {
+  margin: 3px !important;
+}
+
+.btn-scroll > button > i {
+  font-size: 180% !important;
+}
+
+.btn-scroll {
+  max-width: 20px;
+  display: block !important;
+  margin-top:80vh !important;
+  position:fixed;
+  padding:0 !important;
+  right: 5%;
+  z-index:999;
+}
+
+.activebtn {
+  background: rgba(0, 0, 0, 0.7) !important;
+}
+
+
+@media (max-width : 1000px) {
+  .main2 > div {
+    padding-top: 20vh !important;
+  }
+
+}
+
+@media (max-width : 850px) {
+
+  .contenedor-c-s , .texts{
+    margin-top: 10vh !important;
+  }
+
+  .main {
+    display: block;
+  }
+
+}
+
+@media (max-width : 600px) {
+
+  .btn-menu > i{
+    font-size: 400% !important;
+  }
+
+  #checkm:checked ~ .btn-menu {
+    display: none;
+  }
+
+  #checkm:checked ~ ul {
+    margin-top: 0% !important;
+    padding-top: 1%;
+  }
+
+  nav {
+    display: block !important;
+  }
+
+  nav > ul {
+    margin-top: -250% !important;
+    display: block;
+    min-height: 100vh;
+    background: rgba(100,100,100,0.95);
+  }
+
+  nav > ul  li {
+    min-width: 100vw !important;
+  }
+
+  nav > ul  li a {
+    margin: auto;
+    text-align: center;
+  }
+
+  .contenedor-c-s , .texts{
+    margin-top: -15vh !important;
+  }
+
+  .main > h1 {
+    min-width: 100vw !important;
+    font-size: 300% !important;
+  }
+
+  .contenedor-c-s {
+    margin-top: 5% !important;
+  }
+
+  .contenedor-c-s > div > div > div > img {
+    min-width: 50vw;
+  }
+
+  .main > img {
+    margin:auto !important;
+    max-width: 250px !important;
+    float: center;
+  }
+
+}
+
+
+@media (max-width : 400px) {
+  .texts > h4 {
+    font-size: 150%;
+  }
+
+  .texts > h5 {
+    font-size: 130%;
+  }
+}
