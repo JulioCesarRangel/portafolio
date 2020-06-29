@@ -13,7 +13,24 @@
   <body onload="return init();" id="body">
 
     <main id="generalMain">
-
+      
+      <nav class="nav">
+        <input type="checkbox" id="checkm" onclick="return tap();">
+        <label  for="checkm" class="btn-menu hide-on-med-and-up right">
+          <i class="material-icons">menu</i>
+        </label>
+        <ul>
+          <label  for="checkm" class="right btn-menu hide-on-med-and-up">
+            <i class="material-icons">close</i>
+          </label>
+          <br class="hide-on-med-and-up">
+          <br class="hide-on-med-and-up">
+          <li><a href="/">Sobre mi</a></li>
+          <li><a href="/habilidades">Habilidades</a></li>
+          <li><a href="/proyectos">Proyectos</a></li>
+          <li><a href="/contacto">Contacto</a></li>
+        </ul>
+      </nav>
 
       <div class="btn-scroll hide-on-med-and-down">
         <button class="btn grey hide-on-med-and-down" onclick="return arriba();"><i class="material-icons">keyboard_arrow_up</i></button>
