@@ -33,6 +33,8 @@
 .modal-body {
   margin-top: 70px;
   padding: 2% 5% !important;
+  width: inherit;
+  max-width: inherit;
 }
 
 .modal_header {
