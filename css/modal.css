@@ -28,6 +28,7 @@
   margin:5% auto;
   box-shadow: 2px 2px 5px 1px rgba(29, 30, 34, 0.5);
   overflow:auto;
+  display: flex;
 }
 
 .modal-body {
@@ -59,3 +60,4 @@
   top: .5rem;
   right: .5rem;
 }
+
