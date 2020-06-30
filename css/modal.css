@@ -38,7 +38,7 @@
 .modal_header {
   text-align: center;
   background: #fff;
-  width: inherit;
+  width: 55%;
   max-width: inherit;
   padding: 10px;
   position: fixed;
@@ -47,6 +47,7 @@
   color: grey;
   border-bottom: 1px solid #ccc;
   max-height: 100px;
+  overflow: hidden;
 }
 
 .modal_btn-close {
